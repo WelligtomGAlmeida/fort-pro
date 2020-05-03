@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Account' => $baseDir . '/app/Account.php',
+    'App\\AccountBalance' => $baseDir . '/app/AccountBalance.php',
     'App\\AccountCategory' => $baseDir . '/app/AccountCategory.php',
     'App\\AccountType' => $baseDir . '/app/AccountType.php',
     'App\\Bank' => $baseDir . '/app/Bank.php',
