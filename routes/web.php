@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['as' => 'home.', 'prefix' => ''], function()
+{
+    Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
+
 });
