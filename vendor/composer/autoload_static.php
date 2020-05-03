@@ -410,6 +410,7 @@ class ComposerStaticInit99d17225d48d23987743f061742dfe04
     );
 
     public static $classMap = array (
+        'App\\Account' => __DIR__ . '/../..' . '/app/Account.php',
         'App\\AccountCategory' => __DIR__ . '/../..' . '/app/AccountCategory.php',
         'App\\AccountType' => __DIR__ . '/../..' . '/app/AccountType.php',
         'App\\Bank' => __DIR__ . '/../..' . '/app/Bank.php',
