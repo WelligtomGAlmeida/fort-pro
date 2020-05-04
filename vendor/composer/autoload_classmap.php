@@ -40,6 +40,7 @@ return array(
     'App\\SavePoint' => $baseDir . '/app/SavePoint.php',
     'App\\User' => $baseDir . '/app/User.php',
     'App\\Visibility' => $baseDir . '/app/Visibility.php',
+    'App\\recurrence' => $baseDir . '/app/recurrence.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonImmutable' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
     'Carbon\\CarbonInterface' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
