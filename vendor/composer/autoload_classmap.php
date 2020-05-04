@@ -42,6 +42,7 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\SavePoint' => $baseDir . '/app/SavePoint.php',
+    'App\\TransactionCategory' => $baseDir . '/app/TransactionCategory.php',
     'App\\TransactionMovement' => $baseDir . '/app/TransactionMovement.php',
     'App\\TransactionParticipant' => $baseDir . '/app/TransactionParticipant.php',
     'App\\User' => $baseDir . '/app/User.php',

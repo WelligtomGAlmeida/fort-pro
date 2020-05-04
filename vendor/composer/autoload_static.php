@@ -446,6 +446,7 @@ class ComposerStaticInit99d17225d48d23987743f061742dfe04
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\SavePoint' => __DIR__ . '/../..' . '/app/SavePoint.php',
+        'App\\TransactionCategory' => __DIR__ . '/../..' . '/app/TransactionCategory.php',
         'App\\TransactionMovement' => __DIR__ . '/../..' . '/app/TransactionMovement.php',
         'App\\TransactionParticipant' => __DIR__ . '/../..' . '/app/TransactionParticipant.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
