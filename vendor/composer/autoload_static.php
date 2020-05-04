@@ -438,6 +438,7 @@ class ComposerStaticInit99d17225d48d23987743f061742dfe04
         'App\\ManualTransaction' => __DIR__ . '/../..' . '/app/ManualTransaction.php',
         'App\\PaymentStatus' => __DIR__ . '/../..' . '/app/PaymentStatus.php',
         'App\\Person' => __DIR__ . '/../..' . '/app/Person.php',
+        'App\\PersonType' => __DIR__ . '/../..' . '/app/PersonType.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

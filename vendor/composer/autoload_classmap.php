@@ -34,6 +34,7 @@ return array(
     'App\\ManualTransaction' => $baseDir . '/app/ManualTransaction.php',
     'App\\PaymentStatus' => $baseDir . '/app/PaymentStatus.php',
     'App\\Person' => $baseDir . '/app/Person.php',
+    'App\\PersonType' => $baseDir . '/app/PersonType.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
