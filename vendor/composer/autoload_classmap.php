@@ -39,6 +39,7 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\SavePoint' => $baseDir . '/app/SavePoint.php',
+    'App\\TransactionMovement' => $baseDir . '/app/TransactionMovement.php',
     'App\\User' => $baseDir . '/app/User.php',
     'App\\Visibility' => $baseDir . '/app/Visibility.php',
     'App\\recurrence' => $baseDir . '/app/recurrence.php',
