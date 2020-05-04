@@ -453,6 +453,7 @@ class ComposerStaticInit99d17225d48d23987743f061742dfe04
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\Visibility' => __DIR__ . '/../..' . '/app/Visibility.php',
         'App\\recurrence' => __DIR__ . '/../..' . '/app/recurrence.php',
+        'App\\transaction' => __DIR__ . '/../..' . '/app/transaction.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
         'Carbon\\CarbonInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterface.php',

@@ -49,6 +49,7 @@ return array(
     'App\\User' => $baseDir . '/app/User.php',
     'App\\Visibility' => $baseDir . '/app/Visibility.php',
     'App\\recurrence' => $baseDir . '/app/recurrence.php',
+    'App\\transaction' => $baseDir . '/app/transaction.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonImmutable' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonImmutable.php',
     'Carbon\\CarbonInterface' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterface.php',
