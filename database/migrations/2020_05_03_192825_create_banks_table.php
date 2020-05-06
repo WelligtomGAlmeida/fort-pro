@@ -15,8 +15,8 @@ class CreateBanksTable extends Migration
     {
         Schema::create('banks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name', 100)->nullable($value = false)->unique();
-            $table->string('code', 20)->nullable($value = false)->unique();
+            $table->string('name', 100)->nullable($value = false);
+            $table->string('code', 20)->nullable($value = true)->unique();
             $table->timestamps();
         });
     }
