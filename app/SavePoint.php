@@ -11,4 +11,8 @@ class SavePoint extends Model
     protected $fillable = [
         'save_date'
     ];
+
+    function accountBalances(){
+        return $this->hasMany('App\AccountBalance');
+    }
 }

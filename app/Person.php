@@ -13,4 +13,28 @@ class Person extends Model
         'cell_phone',
         'email'
     ];
+
+    function accounts(){
+        return $this->hasMany('App\Account');
+    }
+
+    function incomesExpenses(){
+        return $this->hasMany('App\IncomeExpense');
+    }
+
+    function manualTransactions(){
+        return $this->hasMany('App\ManualTransaction');
+    }
+
+    function loans(){
+        return $this->hasMany('App\Loan');
+    }
+
+    function transactionCategories(){
+        return $this->hasMany('App\TransactionCategory');
+    }
+
+    function transactionParticipants(){
+        return $this->hasMany('App\TransactionParticipant');
+    }
 }

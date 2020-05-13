@@ -11,4 +11,20 @@ class TransactionParticipant extends Model
         'person_type_id',
         'name'
     ];
+
+    function person(){
+        return $this->belongsTo('App\Person');
+    }
+
+    function personType(){
+        return $this->belongsTo('App\PersonType');
+    }
+
+    function incomesExpenses(){
+        return $this->hasMany('App\IncomeExpense');
+    }
+
+    function loans(){
+        return $this->hasMany('App\Loan');
+    }
 }

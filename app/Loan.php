@@ -23,4 +23,32 @@ class Loan extends Model
         'credit_date',
         'debit_date'
     ];
+
+    function person(){
+        return $this->belongsTo('App\Person');
+    }
+
+    function loanMovement(){
+        return $this->belongsTo('App\LoanMovement');
+    }
+
+    function transactionParticipant(){
+        return $this->belongsTo('App\TransactionParticipant');
+    }
+
+    function creditAccount(){
+        return $this->belongsTo('App\Account', 'credit_account_id', 'id');
+    }
+
+    function debitAccount(){
+        return $this->belongsTo('App\Account', 'debit_account_id', 'id');
+    }
+
+    function income(){
+        return $this->belongsTo('App\IncomeExpense', 'income_id', 'id');
+    }
+
+    function expense(){
+        return $this->belongsTo('App\IncomeExpense', 'expense_id', 'id');
+    }
 }

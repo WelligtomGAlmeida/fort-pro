@@ -15,4 +15,16 @@ class Card extends Model
         'invoice_closing_date',
         'number'
     ];
+
+    function cardType(){
+        return $this->belongsTo('App\CardType');
+    }
+
+    function account(){
+        return $this->belongsTo('App\Account');
+    }
+
+    function bank(){
+        return $this->belongsTo('App\Bank');
+    }
 }

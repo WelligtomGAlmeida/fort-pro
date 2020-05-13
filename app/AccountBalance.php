@@ -11,4 +11,12 @@ class AccountBalance extends Model
         'save_point_id',
         'value'
     ];
+
+    function account(){
+        return $this->belongsTo('App\Account');
+    }
+
+    function savePoint(){
+        return $this->belongsTo('App\SavePoint');
+    }
 }

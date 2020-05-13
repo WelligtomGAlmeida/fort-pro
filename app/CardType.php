@@ -9,4 +9,8 @@ class CardType extends Model
     protected $fillable = [
         'name'
     ];
+
+    function cards(){
+        return $this->hasMany('App\Card');
+    }
 }

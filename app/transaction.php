@@ -18,4 +18,20 @@ class Transaction extends Model
         'effective_date',
         'description'
     ];
+
+    function incomeExpense(){
+        return $this->belongsTo('App\IncomeExpense');
+    }
+
+    function manualTransaction(){
+        return $this->belongsTo('App\ManualTransaction');
+    }
+
+    function transactionMovement(){
+        return $this->belongsTo('App\TransactionMovement');
+    }
+
+    function paymentStatus(){
+        return $this->belongsTo('App\PaymentStatus');
+    }
 }

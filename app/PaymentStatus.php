@@ -11,4 +11,12 @@ class PaymentStatus extends Model
     protected $fillable = [
         'name'
     ];
+
+    function incomesExpenses(){
+        return $this->hasMany('App\IncomeExpense');
+    }
+
+    function transactions(){
+        return $this->hasMany('App\Transaction');
+    }
 }

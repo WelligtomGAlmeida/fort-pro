@@ -9,4 +9,8 @@ class PersonType extends Model
     protected $fillable = [
         'name'
     ];
+
+    function transactionParticipants(){
+        return $this->hasMany('App\TransactionParticipant');
+    }
 }

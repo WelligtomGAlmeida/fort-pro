@@ -9,4 +9,8 @@ class LoanMovement extends Model
     protected $fillable = [
         'name'
     ];
+
+    function loans(){
+        return $this->hasMany('App\Loan');
+    }
 }

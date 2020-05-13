@@ -15,4 +15,20 @@ class ManualTransaction extends Model
         'value',
         'operation_date'
     ];
+
+    function person(){
+        return $this->belongsTo('App\Person');
+    }
+
+    function account(){
+        return $this->belongsTo('App\Account');
+    }
+
+    function transactionMovement(){
+        return $this->belongsTo('App\TransactionMovement');
+    }
+
+    function transactions(){
+        return $this->hasMany('App\Transaction');
+    }
 }

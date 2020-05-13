@@ -10,6 +10,9 @@ class TransactionCategoryRelationshipTest extends TestCase
 {
     use RefreshDatabase;
 
+    /*
+     * Testing the insertion of a TransactionCategoryRelationship in the database
+     */
     function testCreateTransactionCategoryRelationship(){
 
         $transactionCategoryRelationship = factory(TransactionCategoryRelationship::class)->create();
