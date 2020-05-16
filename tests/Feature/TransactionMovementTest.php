@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use App\IncomeExpense;
-use App\ManualTransaction;
 use App\Transaction;
 use App\TransactionCategory;
 use App\TransactionMovement;
@@ -36,20 +35,6 @@ class TransactionMovementTest extends TestCase
         $incomeExpense = IncomeExpense::find($incomeExpense->id);
 
         $this->assertTrue($transactionMovement->incomesExpenses->first() == $incomeExpense);
-    }
-
-    /*
-     * Testing Relationship between TransactionMovement and ManualTransaction
-     * TransactionMovement has many ManualTransactions
-     */
-    function testRelationshipTransactionMovementManualTransaction(){
-
-        $manualTransaction = factory(ManualTransaction::class)->create();
-
-        $transactionMovement = TransactionMovement::find($manualTransaction->transaction_movement_id);
-        $manualTransaction = ManualTransaction::find($manualTransaction->id);
-
-        $this->assertTrue($transactionMovement->manualTransactions->first() == $manualTransaction);
     }
 
     /*

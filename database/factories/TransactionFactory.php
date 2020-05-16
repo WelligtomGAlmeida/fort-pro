@@ -10,9 +10,6 @@ $factory->define(Transaction::class, function (Faker $faker) {
         'income_expense_id' => function(){
             return factory(App\IncomeExpense::class)->create()->id;
         },
-        'manual_transaction_id' => function(){
-            return factory(App\ManualTransaction::class)->create()->id;
-        },
         'transaction_movement_id' => function(){
             return factory(App\TransactionMovement::class)->create()->id;
         },

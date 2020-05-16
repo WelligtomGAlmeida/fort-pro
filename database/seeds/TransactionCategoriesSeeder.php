@@ -210,5 +210,23 @@ class TransactionCategoriesSeeder extends Seeder
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
+        DB::table('transaction_categories')->insert([
+            'person_id' => 1,
+            'transaction_movement_id' => 1,
+            'visibility_id' => 1,
+            'name' => 'Manual Transaction - Income',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('transaction_categories')->insert([
+            'person_id' => 1,
+            'transaction_movement_id' => 2,
+            'visibility_id' => 1,
+            'name' => 'Manual Transaction - Expense',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
     }
 }

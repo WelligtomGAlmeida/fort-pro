@@ -10,7 +10,6 @@ use App\Bank;
 use App\Card;
 use App\IncomeExpense;
 use App\Loan;
-use App\ManualTransaction;
 use App\Person;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -116,19 +115,6 @@ class AccountTest extends TestCase
         $this->assertTrue($account->incomesExpenses->first() == $incomeExpense);
     }
 
-    /*
-     * Testing Relationship between Account and ManualTransaction
-     * Account has many ManualTransactions
-     */
-    function testRelationshipAccountManualTransaction(){
-
-        $manualTransaction = factory(ManualTransaction::class)->create();
-
-        $account = Account::find($manualTransaction->account_id);
-        $manualTransaction = ManualTransaction::find($manualTransaction->id);
-
-        $this->assertTrue($account->manualTransactions->first() == $manualTransaction);
-    }
 
     /*
      * Testing Relationship between Account and CreditedLoan(Loan)

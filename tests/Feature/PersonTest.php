@@ -5,7 +5,6 @@ namespace Tests\Feature;
 use App\Account;
 use App\IncomeExpense;
 use App\Loan;
-use App\ManualTransaction;
 use App\Person;
 use App\TransactionCategory;
 use App\TransactionParticipant;
@@ -52,20 +51,6 @@ class PersonTest extends TestCase
         $incomeExpense = IncomeExpense::find($incomeExpense->id);
 
         $this->assertTrue($person->incomesExpenses->first() == $incomeExpense);
-    }
-
-    /*
-     * Testing Relationship between Person and ManualTransaction
-     * Person has many ManualTransactions
-     */
-    function testRelationshipPersonManualTransactions(){
-
-        $manualTransaction = factory(ManualTransaction::class)->create();
-
-        $person = Person::find($manualTransaction->person_id);
-        $manualTransaction = ManualTransaction::find($manualTransaction->id);
-
-        $this->assertTrue($person->manualTransactions->first() == $manualTransaction);
     }
 
     /*

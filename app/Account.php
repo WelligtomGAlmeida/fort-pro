@@ -41,10 +41,6 @@ class Account extends Model
         return $this->hasMany('App\IncomeExpense');
     }
 
-    function manualTransactions(){
-        return $this->hasMany('App\ManualTransaction');
-    }
-
     function creditedLoans(){
         return $this->hasMany('App\Loan', 'credit_account_id', 'id');
     }

@@ -3,12 +3,10 @@
 namespace Tests\Feature;
 
 use App\IncomeExpense;
-use App\ManualTransaction;
 use App\PaymentStatus;
 use App\Transaction;
 use App\TransactionMovement;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class TransactionTest extends TestCase
@@ -37,20 +35,6 @@ class TransactionTest extends TestCase
         $incomeExpense = IncomeExpense::find($transaction->income_expense_id);
 
         $this->assertTrue($transaction->incomeExpense == $incomeExpense);
-    }
-
-    /*
-     * Testing Relationship between Transaction and ManualTransaction
-     * Transactions belongs to ManualTransaction
-     */
-    function testRelationshipTransactionManualTransaction(){
-
-        $transaction = factory(Transaction::class)->create();
-
-        $transaction = Transaction::find($transaction->id);
-        $manualTransaction = ManualTransaction::find($transaction->manual_transaction_id);
-
-        $this->assertTrue($transaction->manualTransaction == $manualTransaction);
     }
 
     /*

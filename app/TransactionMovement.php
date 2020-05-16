@@ -14,10 +14,6 @@ class TransactionMovement extends Model
         return $this->hasMany('App\IncomeExpense');
     }
 
-    function manualTransactions(){
-        return $this->hasMany('App\ManualTransaction');
-    }
-
     function transactionCategories(){
         return $this->hasMany('App\TransactionCategory');
     }

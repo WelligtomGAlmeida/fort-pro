@@ -22,10 +22,6 @@ class Person extends Model
         return $this->hasMany('App\IncomeExpense');
     }
 
-    function manualTransactions(){
-        return $this->hasMany('App\ManualTransaction');
-    }
-
     function loans(){
         return $this->hasMany('App\Loan');
     }

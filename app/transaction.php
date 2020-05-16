@@ -8,7 +8,6 @@ class Transaction extends Model
 {
     protected $fillable = [
         'income_expense_id',
-        'manual_transaction_id',
         'transaction_movement_id',
         'payment_status_id',
         'value',
@@ -21,10 +20,6 @@ class Transaction extends Model
 
     function incomeExpense(){
         return $this->belongsTo('App\IncomeExpense');
-    }
-
-    function manualTransaction(){
-        return $this->belongsTo('App\ManualTransaction');
     }
 
     function transactionMovement(){
