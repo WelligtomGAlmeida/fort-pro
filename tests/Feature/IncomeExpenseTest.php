@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use App\Account;
 use App\IncomeExpense;
 use App\Loan;
 use App\PaymentStatus;
@@ -42,20 +41,6 @@ class IncomeExpenseTest extends TestCase
         $person = Person::find($incomeExpense->person_id);
 
         $this->assertTrue($incomeExpense->person == $person);
-    }
-
-    /*
-     * Testing Relationship between IncomeExpense and Account
-     * Incomes and Expenses belongs to Account
-     */
-    function testRelationshipIncomeExpenseAccount(){
-
-        $incomeExpense = factory(IncomeExpense::class)->create();
-
-        $incomeExpense = IncomeExpense::find($incomeExpense->id);
-        $account = Account::find($incomeExpense->account_id);
-
-        $this->assertTrue($incomeExpense->account == $account);
     }
 
     /*

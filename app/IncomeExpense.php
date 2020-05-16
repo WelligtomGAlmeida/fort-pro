@@ -10,7 +10,6 @@ class IncomeExpense extends Model
 
     protected $fillable = [
         'person_id',
-        'account_id',
         'recurrence_id',
         'payment_status_id',
         'transaction_movement_id',
@@ -24,10 +23,6 @@ class IncomeExpense extends Model
 
     function person(){
         return $this->belongsTo('App\Person');
-    }
-
-    function account(){
-        return $this->belongsTo('App\Account');
     }
 
     function recurrence(){

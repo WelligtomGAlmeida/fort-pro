@@ -37,10 +37,6 @@ class Account extends Model
         return $this->hasMany('App\AccountBalance');
     }
 
-    function incomesExpenses(){
-        return $this->hasMany('App\IncomeExpense');
-    }
-
     function creditedLoans(){
         return $this->hasMany('App\Loan', 'credit_account_id', 'id');
     }

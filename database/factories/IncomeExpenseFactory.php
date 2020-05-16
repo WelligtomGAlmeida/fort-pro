@@ -10,9 +10,6 @@ $factory->define(IncomeExpense::class, function (Faker $faker) {
         'person_id' => function(){
             return factory(App\Person::class)->create()->id;
         },
-        'account_id' => function(){
-            return factory(App\Account::class)->create()->id;
-        },
         'recurrence_id' => function(){
             return factory(App\Recurrence::class)->create()->id;
         },

@@ -8,7 +8,6 @@ use App\AccountCategory;
 use App\AccountType;
 use App\Bank;
 use App\Card;
-use App\IncomeExpense;
 use App\Loan;
 use App\Person;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -100,21 +99,6 @@ class AccountTest extends TestCase
 
         $this->assertTrue($account->accountBalances->first() == $accountBalance);
     }
-
-    /*
-     * Testing Relationship between Account and IncomeExpense
-     * Account has many Incomes and Expenses
-     */
-    function testRelationshipAccountIncomeExpense(){
-
-        $incomeExpense = factory(IncomeExpense::class)->create();
-
-        $account = Account::find($incomeExpense->account_id);
-        $incomeExpense = IncomeExpense::find($incomeExpense->id);
-
-        $this->assertTrue($account->incomesExpenses->first() == $incomeExpense);
-    }
-
 
     /*
      * Testing Relationship between Account and CreditedLoan(Loan)
