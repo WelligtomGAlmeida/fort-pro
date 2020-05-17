@@ -124,7 +124,7 @@ class IncomeExpenseTest extends TestCase
         $incomeExpense = IncomeExpense::find($creditedLoan->income_id);
         $creditedLoan = Loan::find($creditedLoan->id);
 
-        $this->assertTrue($incomeExpense->creditedLoans->first() == $creditedLoan);
+        $this->assertTrue($incomeExpense->creditedLoan == $creditedLoan);
     }
 
     /*
@@ -138,7 +138,7 @@ class IncomeExpenseTest extends TestCase
         $incomeExpense = IncomeExpense::find($debitedLoan->expense_id);
         $debitedLoan = Loan::find($debitedLoan->id);
 
-        $this->assertTrue($incomeExpense->debitedLoans->first() == $debitedLoan);
+        $this->assertTrue($incomeExpense->debitedLoan == $debitedLoan);
     }
 
     /*

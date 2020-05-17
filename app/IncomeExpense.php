@@ -45,12 +45,12 @@ class IncomeExpense extends Model
         return $this->hasMany('App\Transaction');
     }
 
-    function creditedLoans(){
-        return $this->hasMany('App\Loan', 'income_id', 'id');
+    function creditedLoan(){
+        return $this->hasOne('App\Loan', 'income_id', 'id');
     }
 
-    function debitedLoans(){
-        return $this->hasMany('App\Loan', 'expense_id', 'id');
+    function debitedLoan(){
+        return $this->hasOne('App\Loan', 'expense_id', 'id');
     }
 
     function transactionCategories(){
