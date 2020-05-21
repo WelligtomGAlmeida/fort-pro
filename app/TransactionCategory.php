@@ -26,6 +26,6 @@ class TransactionCategory extends Model
     }
 
     function incomesExpenses(){
-        return $this->belongsToMany("App\IncomeExpense", "transaction_category_relationship")->withPivot(['created_at', 'updated_at']);
+        return $this->belongsToMany("App\IncomeExpense", "transaction_categories_transactions")->withPivot(['created_at', 'updated_at']);
     }
 }

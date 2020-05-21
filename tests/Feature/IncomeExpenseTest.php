@@ -9,7 +9,7 @@ use App\Person;
 use App\Recurrence;
 use App\Transaction;
 use App\TransactionCategory;
-use App\TransactionCategoryRelationship;
+use App\TransactionCategoryTransaction;
 use App\TransactionMovement;
 use App\TransactionParticipant;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -147,7 +147,7 @@ class IncomeExpenseTest extends TestCase
      */
     function testRelationshipIncomeExpenseTransactionCategory(){
 
-        $transactionCategoryRelationship = factory(TransactionCategoryRelationship::class)->create();
+        $transactionCategoryRelationship = factory(TransactionCategoryTransaction::class)->create();
 
         $incomeExpense = IncomeExpense::find($transactionCategoryRelationship->income_expense_id);
         $transactionCategory = TransactionCategory::find($transactionCategoryRelationship->transaction_category_id);

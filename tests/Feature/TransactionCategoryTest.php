@@ -5,7 +5,7 @@ namespace Tests\Feature;
 use App\IncomeExpense;
 use App\Person;
 use App\TransactionCategory;
-use App\TransactionCategoryRelationship;
+use App\TransactionCategoryTransaction;
 use App\TransactionMovement;
 use App\Visibility;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -73,7 +73,7 @@ class TransactionCategoryTest extends TestCase
      */
     function testRelationshipTransactionCategoryIncomeExpense(){
 
-        $transactionCategoryRelationship = factory(TransactionCategoryRelationship::class)->create();
+        $transactionCategoryRelationship = factory(TransactionCategoryTransaction::class)->create();
 
         $transactionCategory = TransactionCategory::find($transactionCategoryRelationship->transaction_category_id);
         $incomeExpense = IncomeExpense::find($transactionCategoryRelationship->income_expense_id);

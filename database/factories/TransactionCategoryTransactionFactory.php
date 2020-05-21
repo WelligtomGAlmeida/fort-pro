@@ -2,10 +2,10 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\TransactionCategoryRelationship;
+use App\TransactionCategoryTransaction;
 use Faker\Generator as Faker;
 
-$factory->define(TransactionCategoryRelationship::class, function (Faker $faker) {
+$factory->define(TransactionCategoryTransaction::class, function (Faker $faker) {
     return [
         'income_expense_id' => function(){
             return factory(App\IncomeExpense::class)->create()->id;

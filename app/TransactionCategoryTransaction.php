@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TransactionCategoryRelationship extends Model
+class TransactionCategoryTransaction extends Model
 {
-    protected $table = 'transaction_category_relationship';
+    protected $table = 'transaction_categories_transactions';
 
     protected $fillable = [
         'income_expense_id',
