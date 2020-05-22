@@ -10,6 +10,7 @@ class Transaction extends Model
         'income_expense_id',
         'transaction_movement_id',
         'payment_status_id',
+        'payment_method_id',
         'value',
         'additional_value',
         'installment_number',
@@ -28,5 +29,17 @@ class Transaction extends Model
 
     function paymentStatus(){
         return $this->belongsTo('App\PaymentStatus');
+    }
+
+    function paymentMethod(){
+        return $this->belongsTo('App\PaymentMethod');
+    }
+
+    function cards(){
+        return $this->belongsToMany("App\Card", "transactions_cards")->withPivot(['created_at', 'updated_at']);
+    }
+
+    function accounts(){
+        return $this->belongsToMany("App\Account", "transactions_accounts")->withPivot(['created_at', 'updated_at']);
     }
 }

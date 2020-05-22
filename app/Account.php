@@ -48,4 +48,8 @@ class Account extends Model
     function cards(){
         return $this->hasMany('App\Card');
     }
+
+    function transactions(){
+        return $this->belongsToMany("App\Transaction", "transactions_accounts")->withPivot(['created_at', 'updated_at']);
+    }
 }

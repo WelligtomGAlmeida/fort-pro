@@ -10,6 +10,8 @@ use App\Bank;
 use App\Card;
 use App\Loan;
 use App\Person;
+use App\Transaction;
+use App\TransactionAccount;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -140,5 +142,19 @@ class AccountTest extends TestCase
         $card = Card::find($card->id);
 
         $this->assertTrue($account->cards->first() == $card);
+    }
+
+    /*
+     * Testing Relationship between Account and Transaction
+     * Account belongs to many Transaction
+     */
+    function testRelationshipAccountTransaction(){
+
+        $transactionAccount = factory(TransactionAccount::class)->create();
+
+        $transaction = Transaction::find($transactionAccount->transaction_id);
+        $account = Account::find($transactionAccount->account_id);
+
+        $this->assertTrue($account->transactions->first()->id == $transaction->id);
     }
 }

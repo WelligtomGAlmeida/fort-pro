@@ -6,6 +6,8 @@ use App\Account;
 use App\Bank;
 use App\Card;
 use App\CardType;
+use App\Transaction;
+use App\TransactionCard;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -63,6 +65,20 @@ class CardTest extends TestCase
         $bank = Bank::find($card->bank_id);
 
         $this->assertTrue($card->bank == $bank);
+    }
+
+    /*
+     * Testing Relationship between Card and Transactions
+     * Card belongs to many Transactions
+     */
+    function testRelationshipCardTransaction(){
+
+        $transactionCard = factory(TransactionCard::class)->create();
+
+        $transaction = Transaction::find($transactionCard->transaction_id);
+        $card = Card::find($transactionCard->card_id);
+
+        $this->assertTrue($card->transactions->first()->id == $transaction->id);
     }
 
 }

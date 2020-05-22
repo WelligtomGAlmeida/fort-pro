@@ -16,6 +16,9 @@ $factory->define(Transaction::class, function (Faker $faker) {
         'payment_status_id' => function(){
             return factory(App\PaymentStatus::class)->create()->id;
         },
+        'payment_method_id' => function(){
+            return factory(App\PaymentMethod::class)->create()->id;
+        },
         'value' => $faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 100000.00),
         'additional_value' => $faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 100000.00),
         'installment_number' => $faker->randomDigitNot(0),

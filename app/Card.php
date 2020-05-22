@@ -27,4 +27,8 @@ class Card extends Model
     function bank(){
         return $this->belongsTo('App\Bank');
     }
+
+    function transactions(){
+        return $this->belongsToMany("App\Transaction", "transactions_cards")->withPivot(['created_at', 'updated_at']);
+    }
 }
