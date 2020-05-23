@@ -12,6 +12,7 @@ use App\Loan;
 use App\Person;
 use App\Transaction;
 use App\TransactionAccount;
+use App\Transfer;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -128,6 +129,34 @@ class AccountTest extends TestCase
         $debitedLoan = Loan::find($debitedLoan->id);
 
         $this->assertTrue($account->debitedLoans->first() == $debitedLoan);
+    }
+
+    /*
+     * Testing Relationship between Account and IncomingTransfer(Transfer)
+     * Account has many IncomingTransfer(Transfer)
+     */
+    function testRelationshipAccountIncomingTransfer(){
+
+        $incomingTransfer = factory(Transfer::class)->create();
+
+        $account = Account::find($incomingTransfer->credit_account_id);
+        $incomingTransfer = Transfer::find($incomingTransfer->id);
+
+        $this->assertTrue($account->incomingTransfers->first() == $incomingTransfer);
+    }
+
+    /*
+     * Testing Relationship between Account and OutgoingTransfer(Transfer)
+     * Account has many OutgoingTransfer(Transfer)
+     */
+    function testRelationshipAccountOutgoingTransfer(){
+
+        $outgoingTransfer = factory(Transfer::class)->create();
+
+        $account = Account::find($outgoingTransfer->debit_account_id);
+        $outgoingTransfer = Transfer::find($outgoingTransfer->id);
+
+        $this->assertTrue($account->outgoingTransfers->first() == $outgoingTransfer);
     }
 
     /*

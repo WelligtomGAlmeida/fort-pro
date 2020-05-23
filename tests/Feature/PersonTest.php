@@ -8,6 +8,7 @@ use App\Loan;
 use App\Person;
 use App\TransactionCategory;
 use App\TransactionParticipant;
+use App\Transfer;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -65,6 +66,20 @@ class PersonTest extends TestCase
         $loan = Loan::find($loan->id);
 
         $this->assertTrue($person->loans->first() == $loan);
+    }
+
+    /*
+     * Testing Relationship between Person and Transfer
+     * Person has many Transfers
+     */
+    function testRelationshipPersonTransfers(){
+
+        $transfer = factory(Transfer::class)->create();
+
+        $person = Person::find($transfer->person_id);
+        $transfer = Transfer::find($transfer->id);
+
+        $this->assertTrue($person->transfers->first() == $transfer);
     }
 
     /*

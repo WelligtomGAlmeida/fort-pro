@@ -45,6 +45,14 @@ class Account extends Model
         return $this->hasMany('App\Loan', 'debit_account_id', 'id');
     }
 
+    function incomingTransfers(){
+        return $this->hasMany('App\Transfer', 'credit_account_id', 'id');
+    }
+
+    function outgoingTransfers(){
+        return $this->hasMany('App\Transfer', 'debit_account_id', 'id');
+    }
+
     function cards(){
         return $this->hasMany('App\Card');
     }

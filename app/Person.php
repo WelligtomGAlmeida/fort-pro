@@ -33,4 +33,8 @@ class Person extends Model
     function transactionParticipants(){
         return $this->hasMany('App\TransactionParticipant');
     }
+
+    function Transfers(){
+        return $this->hasMany('App\Transfer');
+    }
 }

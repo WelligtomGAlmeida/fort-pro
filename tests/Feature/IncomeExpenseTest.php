@@ -12,6 +12,7 @@ use App\TransactionCategory;
 use App\TransactionCategoryTransaction;
 use App\TransactionMovement;
 use App\TransactionParticipant;
+use App\Transfer;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -139,6 +140,34 @@ class IncomeExpenseTest extends TestCase
         $debitedLoan = Loan::find($debitedLoan->id);
 
         $this->assertTrue($incomeExpense->debitedLoan == $debitedLoan);
+    }
+
+    /*
+     * Testing Relationship between IncomeExpense and IncomingTransfer(Transfer)
+     * IncomeExpense has many IncomingTransfer(Transfer)
+     */
+    function testRelationshipIncomeExpenseIncomingTransfer(){
+
+        $incomingTransfer = factory(Transfer::class)->create();
+
+        $incomeExpense = IncomeExpense::find($incomingTransfer->income_id);
+        $incomingTransfer = Transfer::find($incomingTransfer->id);
+
+        $this->assertTrue($incomeExpense->incomingTransfer == $incomingTransfer);
+    }
+
+    /*
+     * Testing Relationship between IncomeExpense and OutgoingTransfer(Transfer)
+     * IncomeExpense has many OutgoingTransfer(Transfer)
+     */
+    function testRelationshipIncomeExpenseOutgoingTransfer(){
+
+        $outgoingTransfer = factory(Transfer::class)->create();
+
+        $incomeExpense = IncomeExpense::find($outgoingTransfer->expense_id);
+        $outgoingTransfer = Transfer::find($outgoingTransfer->id);
+
+        $this->assertTrue($incomeExpense->outgoingTransfer == $outgoingTransfer);
     }
 
     /*

@@ -53,6 +53,14 @@ class IncomeExpense extends Model
         return $this->hasOne('App\Loan', 'expense_id', 'id');
     }
 
+    function incomingTransfer(){
+        return $this->hasOne('App\Transfer', 'income_id', 'id');
+    }
+
+    function outgoingTransfer(){
+        return $this->hasOne('App\Transfer', 'expense_id', 'id');
+    }
+
     function transactionCategories(){
         return $this->belongsToMany("App\TransactionCategory", "transaction_categories_transactions")->withPivot(['created_at', 'updated_at']);
     }
