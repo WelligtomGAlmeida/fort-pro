@@ -16,3 +16,7 @@ Route::group(['as' => 'home.', 'prefix' => ''], function()
     Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

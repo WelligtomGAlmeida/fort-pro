@@ -250,7 +250,9 @@ trait FormatsMessages
         // an implicit attribute we will display the raw attribute's name and not
         // modify it with any of these replacements before we display the name.
         if (isset($this->implicitAttributes[$primaryAttribute])) {
-            return $attribute;
+            return ($formatter = $this->implicitAttributesFormatter)
+                            ? $formatter($attribute)
+                            : $attribute;
         }
 
         return str_replace('_', ' ', Str::snake($attribute));
@@ -295,7 +297,7 @@ trait FormatsMessages
         $actualValue = $this->getValue($attribute);
 
         if (is_scalar($actualValue) || is_null($actualValue)) {
-            $message = str_replace(':input', $actualValue, $message);
+            $message = str_replace(':input', $this->getDisplayableValue($attribute, $actualValue), $message);
         }
 
         return $message;
