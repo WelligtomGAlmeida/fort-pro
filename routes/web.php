@@ -11,12 +11,15 @@
 |
 */
 
-Route::group(['as' => 'home.', 'prefix' => ''], function()
-{
-    Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
-
-});
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::group(['as' => 'control-panel.', 'prefix' => ''], function()
+{
+    Route::get('/control-panel', ['as' => 'index', 'uses' => 'ControlPanelController@index']);
+
+});

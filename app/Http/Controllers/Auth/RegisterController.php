@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Person;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Exception;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -50,7 +52,10 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:120'],
+            'birth_date' => ['required', 'date'],
+            'cpf' => ['required', 'string', 'digits:11', 'unique:people'],
+            'cell_phone' => ['required', 'string', 'max:11'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -64,10 +69,25 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $person = new Person([
             'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'birth_date' => $data['birth_date'],
+            'cpf' => $data['cpf'],
+            'cell_phone' => $data['cell_phone']
         ]);
+
+        try{
+            $user = User::create([
+                'email' => $data['email'],
+                'password' => Hash::make($data['password'])
+            ]);
+
+            $user->person()->save($person);
+
+            return $user;
+        }catch(Exception $e){
+
+            dd($e->getMessage());
+        }
     }
 }

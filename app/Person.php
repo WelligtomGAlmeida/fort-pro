@@ -7,12 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Person extends Model
 {
     protected $fillable = [
+        'id',
         'name',
         'birth_date',
         'cpf',
-        'cell_phone',
-        'email'
+        'cell_phone'
     ];
+
+    function user(){
+        return $this->belongsTo('App\Person');
+    }
 
     function accounts(){
         return $this->hasMany('App\Account');
