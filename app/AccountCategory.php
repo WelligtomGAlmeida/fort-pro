@@ -18,4 +18,8 @@ class AccountCategory extends Model
     function accounts(){
         return $this->hasMany('App\Account');
     }
+
+    function accountTypes(){
+        return $this->hasMany('App\AccountType');
+    }
 }

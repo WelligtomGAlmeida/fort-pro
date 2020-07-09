@@ -92,8 +92,10 @@
   <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
   <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
 
-  @yield('javascript')
+  <!-- Adding mask to the fields!-->
+  <script src="{{ asset('js/jquery.mask.js') }}"></script>
 
+  @yield('javascript')
 </body>
 
 </html>

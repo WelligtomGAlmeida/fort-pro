@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Account;
 use App\Http\Controllers\Controller;
+use App\Library\Validation;
 use App\Person;
 use App\Providers\RouteServiceProvider;
 use App\User;
@@ -51,13 +53,20 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        $data['cpf'] = preg_replace( '/[^0-9]/is', '', $data['cpf'] );
+        $data['cell_phone'] = preg_replace( '/[^0-9]/is', '', $data['cell_phone'] );
+
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:120'],
             'birth_date' => ['required', 'date'],
-            'cpf' => ['required', 'string', 'digits:11', 'unique:people'],
             'cell_phone' => ['required', 'string', 'max:11'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'cpf' => ['required', 'string', 'digits:11', 'unique:people', function($attribute, $value, $fail){
+                if(!Validation::validateCpf($value)){
+                    return $fail("The {$attribute} is invalid");
+                }
+            }],
         ]);
     }
 
@@ -69,6 +78,9 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $data['cpf'] = preg_replace( '/[^0-9]/is', '', $data['cpf'] );
+        $data['cell_phone'] = preg_replace( '/[^0-9]/is', '', $data['cell_phone'] );
+
         $person = new Person([
             'name' => $data['name'],
             'birth_date' => $data['birth_date'],
@@ -77,12 +89,29 @@ class RegisterController extends Controller
         ]);
 
         try{
+            // Registering a user
             $user = User::create([
                 'email' => $data['email'],
                 'password' => Hash::make($data['password'])
             ]);
 
+            // Registering a person
             $user->person()->save($person);
+
+            // Registering two initial accounts
+            Account::create([
+                'person_id' => $user->id,
+                'erasable' => false,
+                'account_category_id' => 1,
+                'name' => 'Vault',
+            ]);
+
+            Account::create([
+                'person_id' => $user->id,
+                'erasable' => false,
+                'account_category_id' => 1,
+                'name' => 'Wallet',
+            ]);
 
             return $user;
         }catch(Exception $e){

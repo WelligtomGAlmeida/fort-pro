@@ -1,5 +1,6 @@
 <?php
 
+use App\Person;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -12,8 +13,10 @@ class TransactionCategoriesSeeder extends Seeder
      */
     public function run()
     {
+        $person = Person::where('name','admin')->first();
+
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Water Distribution and Treatment',
@@ -22,7 +25,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Electric power distribution',
@@ -31,7 +34,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Internet distribution',
@@ -40,7 +43,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Telephony services',
@@ -49,7 +52,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Food',
@@ -58,7 +61,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Restaurant',
@@ -67,7 +70,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Rental',
@@ -76,7 +79,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Transport',
@@ -85,7 +88,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Car Maintenance',
@@ -94,7 +97,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Domestic expenses',
@@ -103,7 +106,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Purchase of home appliances',
@@ -112,7 +115,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Buying Clothes',
@@ -121,7 +124,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Purchase of miscellaneous objects',
@@ -130,7 +133,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Medical expenses',
@@ -139,7 +142,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Travels',
@@ -148,7 +151,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Loan granted',
@@ -157,7 +160,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 3,
             'name' => 'Loan payment received previously',
@@ -166,7 +169,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 1,
             'visibility_id' => 3,
             'name' => 'Loan received',
@@ -175,7 +178,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 1,
             'visibility_id' => 3,
             'name' => 'Receipt of previously granted loan',
@@ -184,7 +187,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 1,
             'visibility_id' => 3,
             'name' => 'Salary',
@@ -193,7 +196,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 1,
             'visibility_id' => 3,
             'name' => 'Salary advance',
@@ -202,7 +205,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 1,
             'visibility_id' => 3,
             'name' => 'Sale',
@@ -211,7 +214,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 1,
             'visibility_id' => 1,
             'name' => 'Manual Transaction - Income',
@@ -220,7 +223,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 1,
             'name' => 'Manual Transaction - Expense',
@@ -229,7 +232,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 1,
             'visibility_id' => 1,
             'name' => 'Transfer - Income',
@@ -238,7 +241,7 @@ class TransactionCategoriesSeeder extends Seeder
         ]);
 
         DB::table('transaction_categories')->insert([
-            'person_id' => 1,
+            'person_id' => $person->id,
             'transaction_movement_id' => 2,
             'visibility_id' => 1,
             'name' => 'Transfer - Expense',

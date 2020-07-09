@@ -3,8 +3,13 @@ body {
     font-weight: 300;
 }
 
-button{
+.btn{
     border-radius: 0 !important;
+
+}
+
+.required{
+    color: #e9070f;
 }
 
 .bg-gradient-primary {
@@ -67,4 +72,28 @@ button{
 
 .application-path {
     font-size: 14px!important;
+}
+
+.delete{
+    color: #db3535;
+}
+
+.edit{
+    color: #4f79e8;
+}
+
+.card-shadow{
+    background-color: #f8f9fc;
+}
+
+.no-result{
+    font-size:18px;
+}
+
+.account-card{
+    height: 100%;
+}
+
+.space-between-div{
+    margin-bottom: 20px;
 }

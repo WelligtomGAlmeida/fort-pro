@@ -13,385 +13,6 @@ class BanksSeeder extends Seeder
     public function run()
     {
         DB::table('Banks')->insert([
-            'name' => 'Administradora de Consórcios Sicredi LTDA',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Agoracred S/A Sociedade de Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Alfa de Investimentos S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco C6 S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Caterpillar S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Central do Brasil',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco CNH Industrial Capital S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco CSF S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco de Investimento Credit Suisse (Brasil) S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco de Lage Landen Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Digio S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Fidis S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Ford S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco GMAC S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Honda S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco IBM S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Itaú Veículos S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Itaucard S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Itauleasing S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Komatsu S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Losango S.A. - Banco Múltiplo',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Mercantil de Investimentos S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Mercedes-Benz do Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Moneo S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco PSA Finance Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Randon S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco RCI Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Toyota do Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Vipal S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Volkswagen S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Volvo Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Banco Yamaha Motor do Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'BB Banco de Investimento S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'BMW Financeira S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'BRK S.A. Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'BV Financeira S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Caruana S.A. - Sociedade de Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'CCB Brasil S.A. - Crédito, Financiamentos e Investimentos',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Central das Cooperativas de Crédito do Estado de São Paulo - SICOOB CENTRAL CECRESP',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Credicoamo Crédito Rural Cooperativa',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Credjust - Cooperativa de Crédito Mútuo dos Integrantes da Justiça da 13ª Região LTDA.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Dacasa Financeira S.A.-Soc. de Créd. Financ. e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Daycoval Leasing - Banco Múltiplo S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Facta Financeira S.A. - Crédito Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Finamax S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'HS Financeira S/A Crédito, Financiamento e Investimentos',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'J. Malucelli Distribuidora de Títulos e Valores Mobiliários LTDA.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Lecca Crédito, Financiamento e Investimento S/A',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Omni SA Crédito Financiamento Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Parati - Crédito Financiamento e Investimento S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Pernambucanas Financiadora S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Pine Investimentos Distribuidoras de Títulos e Valores Mobiliários LTDA',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Portocred S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'PortoSeg S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Redecard S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Santana S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Santinvest S.A - Crédito, Financiamento e Investimentos',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Sax S.A. - Crédito, Financiamento e Investimento',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Scania Banco S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Sorocred Crédito, Financiamento e Investimento S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'UNIPRIME Central - Central Interestadual de Cooperativas de Crédito Ltda.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'name' => 'Volvo Administradora de Consórcio LTDA.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '654',
-            'name' => 'Banco A.J.Renner S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '246',
             'name' => 'Banco ABC Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
@@ -399,7 +20,7 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '075',
+            'code' => '75',
             'name' => 'Banco ABN AMRO S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -413,7 +34,7 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '025',
+            'code' => '25',
             'name' => 'Banco Alfa S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -427,36 +48,22 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '065',
+            'code' => '65',
             'name' => 'Banco Andbank (Brasil) S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '213',
-            'name' => 'Banco Arbi S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '096',
+            'code' => '96',
             'name' => 'Banco B3 S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '024',
+            'code' => '24',
             'name' => 'Banco BANDEPE S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '330',
-            'name' => 'Banco Bari de Investimentos e Financiamentos S/A',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -483,22 +90,15 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '063',
+            'code' => '63',
             'name' => 'Banco Bradescard S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '036',
+            'code' => '36',
             'name' => 'Banco Bradesco BBI S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '122',
-            'name' => 'Banco Bradesco BERJ S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -539,6 +139,12 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
+            'name' => 'Banco C6 S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
             'code' => '473',
             'name' => 'Banco Caixa Geral - Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
@@ -546,22 +152,14 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '412',
-            'name' => 'Banco Capital S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '040',
+            'code' => '40',
             'name' => 'Banco Cargill S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '266',
-            'name' => 'Banco Cédula S.A.',
+            'name' => 'Banco Caterpillar S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -588,8 +186,7 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '241',
-            'name' => 'Banco Clássico S.A.',
+            'name' => 'Banco CNH Industrial Capital S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -623,21 +220,20 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '069',
-            'name' => 'Banco Crefisa S.A.',
+            'name' => 'Banco CSF S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '003',
+            'code' => '3',
             'name' => 'Banco da Amazônia S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '083',
+            'code' => '83',
             'name' => 'Banco da China Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -651,63 +247,47 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '51',
-            'name' => 'Banco de Desenvolvimento do Espírito Santo S.A.',
+            'name' => 'Banco de Lage Landen Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '300',
-            'name' => 'Banco de La Nacion Argentina',
+            'name' => 'Banco Digio S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '495',
-            'name' => 'Banco de La Provincia de Buenos Aires',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '494',
-            'name' => 'Banco de La Republica Oriental del Uruguay',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '001',
+            'code' => '1',
             'name' => 'Banco do Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '047',
+            'code' => '47',
             'name' => 'Banco do Estado de Sergipe S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '037',
+            'code' => '37',
             'name' => 'Banco do Estado do Pará S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '041',
+            'code' => '41',
             'name' => 'Banco do Estado do Rio Grande do Sul S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '004',
+            'code' => '4',
             'name' => 'Banco do Nordeste do Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -735,8 +315,26 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '094',
+            'name' => 'Banco Fidis S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'code' => '94',
             'name' => 'Banco Finaxis S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'name' => 'Banco Ford S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'name' => 'Banco GMAC S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -749,7 +347,19 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '012',
+            'name' => 'Banco Honda S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'name' => 'Banco IBM S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'code' => '12',
             'name' => 'Banco Inbursa S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -770,7 +380,7 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '077',
+            'code' => '77',
             'name' => 'Banco Inter S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -791,8 +401,14 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '029',
+            'code' => '29',
             'name' => 'Banco Itaú Consignado S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'name' => 'Banco Itaú Veí­culos S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -805,6 +421,12 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
+            'name' => 'Banco Itaucard S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
             'code' => '376',
             'name' => 'Banco J. P. Morgan S.A.',
             'created_at' => date("Y-m-d H:i:s"),
@@ -812,7 +434,7 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '074',
+            'code' => '74',
             'name' => 'Banco J. Safra S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -826,36 +448,8 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '076',
-            'name' => 'Banco KDB S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '757',
-            'name' => 'Banco KEB HANA do Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '600',
             'name' => 'Banco Luso Brasileiro S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '243',
-            'name' => 'Banco Máxima S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '720',
-            'name' => 'Banco Maxinvest S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -882,22 +476,8 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '066',
-            'name' => 'Banco Morgan Stanley S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '456',
             'name' => 'Banco MUFG Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '007',
-            'name' => 'Banco Nacional de Desenvolvimento Econômico e Social - BNDES',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -910,22 +490,8 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '079',
-            'name' => 'Banco Original do Agronegócio S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '212',
             'name' => 'Banco Original S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '712',
-            'name' => 'Banco Ourinvest S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -952,13 +518,6 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '658',
-            'name' => 'Banco Porto Real de Investimentos S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '747',
             'name' => 'Banco Rabobank International Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
@@ -966,15 +525,14 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '633',
-            'name' => 'Banco Rendimento S.A.',
+            'name' => 'Banco RCI Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '741',
-            'name' => 'Banco Ribeirão Preto S.A.',
+            'code' => '633',
+            'name' => 'Banco Rendimento S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -994,8 +552,8 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '033',
-            'name' => 'Banco Santander (Brasil) S.A.',
+            'code' => '33',
+            'name' => 'Banco Santander  (Brasil)  S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1003,13 +561,6 @@ class BanksSeeder extends Seeder
         DB::table('Banks')->insert([
             'code' => '743',
             'name' => 'Banco Semear S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '754',
-            'name' => 'Banco Sistema S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1029,13 +580,6 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '637',
-            'name' => 'Banco Sofisa S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '464',
             'name' => 'Banco Sumitomo Mitsui Brasileiro S.A.',
             'created_at' => date("Y-m-d H:i:s"),
@@ -1043,8 +587,14 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '082',
+            'code' => '82',
             'name' => 'Banco Topázio S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'name' => 'Banco Toyota do Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1057,8 +607,7 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '018',
-            'name' => 'Banco Tricury S.A.',
+            'name' => 'Banco Volvo Brasil S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1085,13 +634,6 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '124',
-            'name' => 'Banco Woori Bank do Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '102',
             'name' => 'Banco XP S.A.',
             'created_at' => date("Y-m-d H:i:s"),
@@ -1099,15 +641,21 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '081',
+            'name' => 'Banco Yamaha Motor do Brasil S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
+            'code' => '81',
             'name' => 'BancoSeguro S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '021',
-            'name' => 'BANESTES S.A. Banco do Estado do Espírito Santo',
+            'code' => '21',
+            'name' => 'BANESTES S.A. Banco do Estado do Espí­rito Santo',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1134,29 +682,15 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '017',
+            'code' => '17',
             'name' => 'BNY Mellon Banco S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '126',
-            'name' => 'BR Partners Banco de Investimento S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '070',
-            'name' => 'BRB - Banco de Brasília S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '092',
-            'name' => 'Brickell S.A. Crédito, Financiamento e Investimento',
+            'code' => '70',
+            'name' => 'BRB - Banco de Brasí­lia S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1164,13 +698,6 @@ class BanksSeeder extends Seeder
         DB::table('Banks')->insert([
             'code' => '104',
             'name' => 'Caixa Econômica Federal',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '114-7',
-            'name' => 'Central das Cooperativas de Economia e Crédito Mútuo do Estado do Espírito Santo Ltda.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1190,55 +717,6 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '163',
-            'name' => 'Commerzbank Brasil S.A. - Banco Múltiplo',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '085',
-            'name' => 'Cooperativa Central de Crédito - AILOS',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '097',
-            'name' => 'Cooperativa Central de Crédito Noroeste Brasileiro Ltda.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '090-2',
-            'name' => 'Cooperativa Central de Economia e Crédito Mutuo - SICOOB UNIMAIS',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '087-6',
-            'name' => 'Cooperativa Central de Economia e Crédito Mútuo das Unicreds de Santa Catarina e Paraná',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '089-2',
-            'name' => 'Cooperativa de Crédito Rural da Região da Mogiana',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '098-1',
-            'name' => 'CREDIALIANÇA COOPERATIVA DE CRÉDITO RURAL',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '487',
             'name' => 'Deutsche Bank S.A. - Banco Alemão',
             'created_at' => date("Y-m-d H:i:s"),
@@ -1246,21 +724,14 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '064',
+            'code' => '64',
             'name' => 'Goldman Sachs do Brasil Banco Múltiplo S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '078',
-            'name' => 'Haitong Banco de Investimento do Brasil S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '062',
+            'code' => '62',
             'name' => 'Hipercard Banco Múltiplo S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -1274,22 +745,8 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '132',
-            'name' => 'ICBC do Brasil Banco Múltiplo S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '492',
             'name' => 'ING Bank N.V.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '139',
-            'name' => 'Intesa Sanpaolo Brasil S.A. - Banco Múltiplo',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
@@ -1330,20 +787,6 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '753',
-            'name' => 'Novo Banco Continental S.A. - Banco Múltiplo',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '613',
-            'name' => 'Omni Banco S.A.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
             'code' => '254',
             'name' => 'Paraná Banco S.A.',
             'created_at' => date("Y-m-d H:i:s"),
@@ -1358,6 +801,12 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
+            'name' => 'Scania Banco S.A.',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('Banks')->insert([
             'code' => '751',
             'name' => 'Scotiabank Brasil S.A. Banco Múltiplo',
             'created_at' => date("Y-m-d H:i:s"),
@@ -1365,21 +814,7 @@ class BanksSeeder extends Seeder
         ]);
 
         DB::table('Banks')->insert([
-            'code' => '118',
-            'name' => 'Standard Chartered Bank (Brasil) S/A–Bco Invest.',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '014',
-            'name' => 'State Street Brasil S.A. - Banco Comercial',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '095',
+            'code' => '95',
             'name' => 'Travelex Banco de Câmbio S.A.',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
@@ -1392,18 +827,5 @@ class BanksSeeder extends Seeder
             'updated_at' => date("Y-m-d H:i:s")
         ]);
 
-        DB::table('Banks')->insert([
-            'code' => '091-4',
-            'name' => 'Unicred Central do Rio Grande do Sul',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
-
-        DB::table('Banks')->insert([
-            'code' => '084',
-            'name' => 'Uniprime Norte do Paraná - Coop de Economia e Crédito Mútuo dos Médicos, Profissionais das Ciências',
-            'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s")
-        ]);
     }
 }

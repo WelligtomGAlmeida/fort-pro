@@ -9,7 +9,7 @@
     <div class="col-md-6">
         <h1 class="text-center theme-color">Register</h1>
         <br>
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('register') }}" name="registerForm" id="registerForm">
             @csrf
 
             <div class="form-group row">
@@ -118,5 +118,9 @@
 
 @section('javascript')
 <script type="text/javascript">
+    $(document).ready(function(){
+        $('#cpf').mask('000.000.000-00');
+        $('#cell_phone').mask('(00)00000-0000');
+    });
 </script>
 @endsection
