@@ -91,7 +91,13 @@ class AccountController extends Controller
      */
     public function show($id)
     {
-        //
+        $account = Account::where('id', $id)->with(['bank', 'accountType'])->first();
+
+        if(!isset($account)){
+            return response()->json('The account was not found!', 404);
+        }
+
+        return response()->json($account);
     }
 
     /**
@@ -200,22 +206,5 @@ class AccountController extends Controller
                         ->where('person_id', Auth::user()->id)->get();
 
         return response()->json($accounts);
-    }
-
-    /**
-     * Find the account that has the string specified in the name
-     *
-     * @param  String  $search
-     * @return \Illuminate\Http\Response
-     */
-    public function find($id){
-
-        $account = Account::where('id', $id)->with(['bank', 'accountType'])->first();
-
-        if(!isset($account)){
-            return response()->json('The account was not found!', 404);
-        }
-
-        return response()->json($account);
     }
 }

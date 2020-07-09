@@ -103,6 +103,7 @@ class RegisterController extends Controller
                 'person_id' => $user->id,
                 'erasable' => false,
                 'account_category_id' => 1,
+                'account_type_id' => 2,
                 'name' => 'Vault',
             ]);
 
@@ -110,6 +111,7 @@ class RegisterController extends Controller
                 'person_id' => $user->id,
                 'erasable' => false,
                 'account_category_id' => 1,
+                'account_type_id' => 1,
                 'name' => 'Wallet',
             ]);
 
