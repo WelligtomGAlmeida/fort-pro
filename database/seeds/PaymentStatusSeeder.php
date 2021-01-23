@@ -25,6 +25,12 @@ class PaymentStatusSeeder extends Seeder
         ]);
 
         DB::table('payment_status')->insert([
+            'name' => 'Received',
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        DB::table('payment_status')->insert([
             'name' => 'Canceled',
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")

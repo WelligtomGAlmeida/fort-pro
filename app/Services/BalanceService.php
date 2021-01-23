@@ -2,29 +2,75 @@
 
 namespace App\Services;
 
-use App\Transaction;
+use App\Repositories\BalanceRepository;
 use DateTime;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Date;
-use Illuminate\Support\Facades\DB;
 
 class BalanceService
 {
+    private $balanceRepository;
+
+    public function __construct()
+    {
+        $this->balanceRepository = new BalanceRepository;
+    }
+
     /**
-     * Display a listing of the resource.
+     * Get the balance on the especified date
      *
      * @param DateTime $date
      * @return int
      */
     public static function getBalance(DateTime $date)
     {
-        $transacoes = Transaction::select(DB::raw('sum(case when incomes_expenses.transaction_movement_id = 1 then transactions.value + transactions.additional_value else 0 end) - sum(case when incomes_expenses.transaction_movement_id = 2 then transactions.value + transactions.additional_value else 0 end) as balance'))
-            ->join('incomes_expenses', 'incomes_expenses.id', '=', 'transactions.income_expense_id')
-            ->where('transactions.payment_status_id', '=', 2)
-            ->where('incomes_expenses.person_id', '=', Auth::user()->id)
-            ->where('transactions.effective_date', '<=', $date->format('Y-m-d'))
-            ->first();
+        return BalanceRepository::getBalance($date);
+    }
 
-        return \doubleval($transacoes->balance) ?? 0;
+    /**
+     * Get the accounts balances on the especified date
+     *
+     * @param DateTime $date
+     * @return int
+     */
+    public static function getAccountsBalances(DateTime $date)
+    {
+        $balance = BalanceRepository::getBalance($date);
+        $accountsBalances = BalanceRepository::getAccountsBalances($date);
+
+        $accountsBalancesFormatted = [
+            'total_positive_balance' => 0.0,
+            'total_negative_balance' => 0.0,
+            'accounts_with_positive_balance' => [],
+            'accounts_with_negative_balance' => []
+        ];
+
+        // calculating total value of accounts with positive and negative balance
+        foreach($accountsBalances as $accountBalance){
+            if(\doubleval($accountBalance['balance']) >= 0)
+                $accountsBalancesFormatted['total_positive_balance'] += \doubleval($accountBalance['balance']);
+            else
+                $accountsBalancesFormatted['total_negative_balance'] += \doubleval($accountBalance['balance']);
+        }
+
+        // calculating the percentage of the accounts balances
+        foreach($accountsBalances as $accountBalance){
+            if(\doubleval($accountBalance['balance']) > 0){
+                array_push($accountsBalancesFormatted['accounts_with_positive_balance'], [
+                    'account_name' => $accountBalance['name'],
+                    'color' => $accountBalance['color'],
+                    'value' => $accountBalance['balance'],
+                    'percentage' => \doubleval($accountBalance['balance']) * 100 / $accountsBalancesFormatted['total_positive_balance']
+                ]);
+            }
+            else if(\doubleval($accountBalance['balance']) < 0){
+                array_push($accountsBalancesFormatted['accounts_with_negative_balance'], [
+                    'account_name' => $accountBalance['name'],
+                    'color' => $accountBalance['color'],
+                    'value' => $accountBalance['balance'],
+                    'percentage' => \doubleval($accountBalance['balance']) * 100 / $accountsBalancesFormatted['total_negative_balance']
+                ]);
+            }
+        }
+
+        return $accountsBalancesFormatted ?? [];
     }
 }

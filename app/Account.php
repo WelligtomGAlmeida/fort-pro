@@ -18,7 +18,8 @@ class Account extends Model
         'agency',
         'number',
         'check_digit',
-        'erasable'
+        'erasable',
+        'color_id'
     ];
 
     function person(){
@@ -35,6 +36,10 @@ class Account extends Model
 
     function accountType(){
         return $this->belongsTo('App\AccountType');
+    }
+
+    function color(){
+        return $this->belongsTo('App\Color');
     }
 
     function accountBalances(){

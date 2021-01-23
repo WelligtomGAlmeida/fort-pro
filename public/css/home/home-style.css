@@ -1,0 +1,113 @@
+.no-padding{
+    padding:0 !important;
+}
+.no-margin{
+    margin: 0 !important;
+}
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+.resume-value{
+    font-size: 30px;
+    color:#808080;
+    font-weight: bold;
+}
+.resume-title{
+    font-size: 16px;
+}
+.negative-value{
+    color:#d75555 !important;
+}
+.positive-value{
+    color:#55d780 !important;
+}
+#incomes-value{
+    color:#556dd7 !important;
+}
+#expenses-value{
+    color:#9c55d7 !important;
+}
+.transactions-list-header{
+    padding-bottom: 15px;
+}
+.transactions-list-header>div{
+    font-size: 25px;
+}
+
+.balance-composition-title{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between !important;
+}
+.balance-composition-title>span{
+    margin-bottom: 8px;
+}
+.balance-composition-bar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+}
+.balance-composition-bar > .balance-composition-bar--section:first-child > .balance-composition-bar--part{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.balance-composition-bar > .balance-composition-bar--section:last-child > .balance-composition-bar--part{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.balance-composition-bar--section{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.balance-composition-bar--part{
+    width: 100%;
+    height: 50%;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+.balance-composition-bar--name{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr.transaction > .positive{
+    font-weight: bolder;
+    font-size: 18px;
+    color:#556dd7 !important;
+}
+tr.transaction > .negative{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #9c55d7 !important;
+}
+
+.pending-status{
+    color: #1ba1bf;
+}
+.paid-out-status{
+    color:#55d780;
+}
+.canceled-status{
+    color: #292525;
+}
+.overdue-status{
+    color:#d75555 !important;
+}
+.effect-transaction-button, .effect-transaction-button:hover, .effect-transaction-button:active{
+    background: #68d47f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+}

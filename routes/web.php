@@ -18,9 +18,10 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::group(['as' => 'control-panel.', 'prefix' => ''], function()
+Route::group(['as' => 'control-panel.', 'prefix' => '/control-panel'], function()
 {
-    Route::get('/control-panel', ['as' => 'index', 'uses' => 'ControlPanelController@index']);
+    Route::get('', ['as' => 'index', 'uses' => 'ControlPanelController@index']);
+    Route::get('/email', ['as' => 'email', 'uses' => 'ControlPanelController@email']);
 
 });
 
@@ -39,4 +40,17 @@ Route::group(['as' => 'account.', 'prefix' => '/account'], function()
 Route::group(['as' => 'accountType.', 'prefix' => '/accountType'], function()
 {
     Route::get('/find/{accountCategory?}', ['as' => 'find', 'uses' => 'AccountTypeController@find']);
+});
+
+Route::group(['as' => 'balance.', 'prefix' => '/balance'], function()
+{
+    Route::get('/get-balance', ['as' => 'getBalance', 'uses' => 'BalanceController@getBalance']);
+    Route::get('/get-accounts-balances', ['as' => 'getAccountsBalances', 'uses' => 'BalanceController@getAccountsBalances']);
+});
+
+Route::group(['as' => 'transaction.', 'prefix' => '/transaction'], function()
+{
+    Route::get('/get-month-resume', ['as' => 'getMonthResume', 'uses' => 'TransactionController@getMonthResume']);
+    Route::get('/get-transactions-months', ['as' => 'getTransactionsMonths', 'uses' => 'TransactionController@getTransactionsMonths']);
+    Route::get('/get-month-transactions/{month}', ['as' => 'getMonthTransactions', 'uses' => 'TransactionController@getMonthTransactions']);
 });

@@ -16,6 +16,16 @@ class BalanceController extends Controller
      */
     public function getBalance()
     {
-        return response()->json(BalanceService::getBalance(new DateTime()));
+        return response()->json([
+            'status' => 'success',
+            'value' => BalanceService::getBalance(new DateTime())
+        ]);
+    }
+
+    public function getAccountsBalances(){
+        return response()->json([
+            'status' => 'success',
+            'data' => BalanceService::getAccountsBalances(new DateTime())
+        ]);
     }
 }

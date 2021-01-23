@@ -22,10 +22,11 @@
   <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+  @yield("css")
+
 </head>
 
 <body id="page-top">
-
   <!-- Page Wrapper -->
   <div id="wrapper">
 
@@ -237,7 +238,9 @@
     <!-- Adding mask to the fields!-->
     <script src="{{ asset('js/jquery.mask.js') }}"></script>
 
-    @yield('javascript')
+
+
+        @yield('javascript')
 
 </body>
 
